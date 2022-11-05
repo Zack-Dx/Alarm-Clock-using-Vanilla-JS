@@ -27,6 +27,9 @@ let date = timer.getDate();
 //Audio
 function bell() {
   audio.play();
+  setTimeout(() => {
+    location.reload()
+  }, 10000);
 }
 
 const para = document.getElementById("para");
