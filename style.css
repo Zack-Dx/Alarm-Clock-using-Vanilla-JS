@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(7 7 54);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.clockbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  flex-direction: column;
+}
+
+.clockbox img {
+  height: 30rem;
+  padding: 20px;
+}
+
+#alarm select {
+  padding: 1rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  border: 3px solid black;
+  border-radius: 12px;
+  outline: none;
+  margin: 5px;
+}
+#alarm select:focus {
+  box-shadow: 0 0 4px #7e6ce4, 0 0 8px #7e6ce4, 0 0 12px #7e6ce4;
+}
+
+.buttons {
+  margin: 20px;
+  text-align: center;
+}
+
+#btn,
+#clearAlarm {
+  color: white;
+  margin: 10px;
+  background: hsl(350, 80%, 55%);
+  border: 0;
+  border-radius: 24px;
+  padding: 8px 25px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btn:hover,
+#clearAlarm:hover {
+  box-shadow: 0 0 4px #2196f3, 0 0 8px #2196f3, 0 0 12px #2196f3;
+
+  transform: scale(1.05);
+}
+
+#clearAlarm {
+  background: grey;
+}
