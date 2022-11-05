@@ -39,11 +39,12 @@ setAlarm.addEventListener("click", () => {
   alarmDate = new Date(
     `${year}-${month}-${date} ${hours.value}:${mins.value}:${secs.value}`
   );
-alert("Apka Anokha Alarm darz kiya ja chuka hai")
+
   timeforAlarm = new Date();
 
   alarmTime = alarmDate - timeforAlarm;
   console.log(alarmTime);
+  alert(`Apka anokha Alarm darz kiya ja chuka hai jo ${alarmTime/1000} secs mei cheekhega.`)
 
   if (alarmTime >= 0) {
     setTimeout(() => {
