@@ -13,7 +13,7 @@ for (let i = 0; i <= 60; i++) {
 }
 
 // For hours:
-for (let i = 0; i <= 24; i++) {
+for (let i = 0; i < 24; i++) {
   hours.innerHTML =
     hours.innerHTML + `<option value="${i}" id="">${i}</option> `;
 }
