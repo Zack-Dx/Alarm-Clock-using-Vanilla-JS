@@ -39,7 +39,7 @@ setAlarm.addEventListener("click", () => {
   alarmDate = new Date(
     `${year}-${month}-${date} ${hours.value}:${mins.value}:${secs.value}`
   );
-
+alert("Apka Anokha Alarm darz kiya ja chuka hai")
   timeforAlarm = new Date();
 
   alarmTime = alarmDate - timeforAlarm;
